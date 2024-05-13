@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Registro De Cliente</title>
+</head>
+<body>
+<h1>Registrar Clientes</h1>
+<form th:action="@{/Registrar}" th:object="${cliente}" method="post">
+
+    <label>Id:</label><input type="text" th:name="id"></input>
+    <br><br>
+    <label>Codigo Postal:</label><input type="text" th:name="codigo_postal"></input>
+    <br><br>
+    <label>Apellido Paterno:</label><input type="text" th:name="apelledio_paterno"></input>
+    <br><br>
+    <label>Apellido Materno:</label><input type="text" th:name="apellido_materno"></input>
+    <br><br>
+    <label>Primer Nombre:</label><input type="text" th:name="primer_nombre"></input>
+    <br><br>
+    <label>Segundo Nombre:</label><input type="text" th:name="segundo_nombre"></input>
+    <br><br>
+    <label>Ciudad:</label><input type="text" th:name="ciudad"></input>
+    <br><br>
+    <label>Estado Civil:</label><input type="text" th:name="estado_civil"></input>
+    <br><br>
+    <label>Sueldo:</label><input type="text" th:name="sueldo"></input>
+    <br><br>
+    <input type="submit" value="Registrar Cliente" name="btnRegistrar"></input>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Lista Clientes</title>
+</head>
+<body>
+<h1>LISTA DE CLIENTES</h1>
+<table border="3">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>CODIGO POSTAL</th>
+        <th>PRIMER NOMBRE</th>
+        <th>SEGUNDO NOMBRE</th>
+        <th>APELLIDO PATERNO</th>
+        <th>APELLIDO MATERNO</th>
+        <th>CIUDAD</th>
+        <th>ESTADO CIVIL</th>
+        <th>SUELDO</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="obJCLI : ${listaA}">
+        <td th:text="${obJCLI.id}"></td>
+        <td th:text="${obJCLI.codigo_postal}"></td>
+        <td th:text="${obJCLI.primer_nombre}"></td>
+        <td th:text="${obJCLI.segundo_nombre}"></td>
+        <td th:text="${obJCLI.apelledio_paterno}"></td>
+        <td th:text="${obJCLI.apellido_materno}"></td>
+        <td th:text="${obJCLI.ciudad}"></td>
+        <td th:text="${obJCLI.estado_civil}"></td>
+        <td th:text="${obJCLI.sueldo}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
